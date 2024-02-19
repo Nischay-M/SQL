@@ -1,0 +1,10 @@
+emp employee table is given in which id name manager id and salary is given
+we will use self join with same another emp table in this
+
+
+
+solution
+###################################
+select e.emp_id, e.name,e.salary, m.name as manager_name,m.salary as manager_salary
+from emp e
+inner join emp m on e.emp_id=m.manager_id
